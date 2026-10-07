@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAMB CBT Practice Exam Engine - Powered by Rila Solutions</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: #090d16;
+      color: #f1f5f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+    .card {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 24px;
+      max-width: 680px;
+      width: 100%;
+      padding: 36px;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+    .brand-sub {
+      color: #10b981;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    p.subtitle {
+      color: #94a3b8;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+    .method-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    .method-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #34d399;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .method-desc {
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.5;
+      margin-bottom: 14px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #059669;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #10b981; }
+    ol {
+      margin-left: 20px;
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.7;
+    }
+    kbd {
+      background: #0f172a;
+      border: 1px solid #475569;
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-family: monospace;
+      color: #34d399;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .footer-note {
+      text-align: center;
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid #1e293b;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 14px;">
+      <img src="public/icon.svg" width="60" height="60" style="border-radius: 16px; border: 1px solid #1e293b; background: #0b1120; padding: 4px;" alt="Rila Solutions Logo" />
+      <div>
+        <span class="badge" style="margin-bottom: 4px;">100% Offline • Windows 11 / 10 / Mac / Linux</span>
+        <h1 style="font-size: 22px; line-height: 1.2;">JAMB CBT Practice Exam Engine</h1>
+      </div>
+    </div>
+    <div class="brand-sub">
+      <span>★ Powered by: © <a href="https://rilasolutions.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: #10b981; font-weight: 700; text-decoration: underline;">Rila Solutions</a></span>
+    </div>
+    <p class="subtitle">This application is pre-compiled and configured to run <strong>completely offline without an internet connection</strong>.</p>
+
+    <!-- Method 1: The Offline PC Launcher -->
+    <div class="method-card" style="border-color: rgba(16, 185, 129, 0.5); background: rgba(5, 150, 105, 0.08);">
+      <div class="method-title">
+        <span>⚡ 1-CLICK LAUNCH ON OFFLINE WINDOWS PC (No Internet Required)</span>
+      </div>
+      <p class="method-desc">
+        Everything is already built inside the <kbd>dist</kbd> folder. You do not need to install Node.js, Python, or connect to the internet:
+      </p>
+      <ol style="margin-bottom: 12px;">
+        <li>Double-click the file named <kbd>DOUBLE-CLICK-TO-RUN-OFFLINE.bat</kbd> (or <kbd>START-JAMB-CBT-WINDOWS.bat</kbd>) in this folder.</li>
+        <li>Your default browser (Chrome, Edge, Brave) will open immediately at <kbd>http://localhost:5000</kbd>.</li>
+        <li>Click the green <strong>"Install Desktop App"</strong> button inside to pin it directly to your Windows Desktop and Start Menu!</li>
+      </ol>
+    </div>
+
+    <!-- Method 2: If Online / Live Browser -->
+    <div class="method-card">
+      <div class="method-title" style="color: #38bdf8;">
+        <span>🌐 Alternative: Open in Browser via Live Link</span>
+      </div>
+      <p class="method-desc">
+        If you have internet access on this device and prefer to install straight from the cloud:
+      </p>
+      <a class="btn" href="https://ais-pre-5sresj5fniwjphhhoax6kx-910682355031.europe-west2.run.app" target="_blank">
+        🚀 Open Live App & Install to Desktop
+      </a>
+    </div>
+
+    <div class="footer-note">
+      JAMB CBT Practice Exam Engine - Offline Pro • Powered by: © <a href="https://rilasolutions.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: #10b981; font-weight: 700; text-decoration: underline;">Rila Solutions</a>
+    </div>
+  </div>
+</body>
+</html>

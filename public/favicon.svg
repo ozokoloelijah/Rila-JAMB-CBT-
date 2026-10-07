@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Hexagon Border Gradient -->
+    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <!-- Cyber Blue Gradient for R -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- Emerald Green Gradient for S -->
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Drop Shadow / Glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#10b981" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- App Icon Base -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Outer Hexagon Badge -->
+  <g filter="url(#glow)">
+    <path
+      d="M 256,40 
+         L 436,144 
+         L 436,368 
+         L 256,472 
+         L 76,368 
+         L 76,144 
+         Z"
+      fill="#0b1120"
+      stroke="url(#hexGrad)"
+      stroke-width="20"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- Inner Hexagon Accent -->
+  <path
+    d="M 256,66 
+       L 412,156 
+       L 412,356 
+       L 256,446 
+       L 100,356 
+       L 100,156 
+       Z"
+    fill="none"
+    stroke="url(#hexGrad)"
+    stroke-width="4"
+    opacity="0.4"
+    stroke-linejoin="round"
+  />
+
+  <!-- Interlocking 'R' (Cyber Blue) -->
+  <g fill="none" stroke="url(#blueGrad)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Vertical stem -->
+    <path d="M 180,160 L 180,350" />
+    <!-- Upper loop -->
+    <path d="M 180,168 C 245,168 270,195 270,228 C 270,262 238,276 180,276" />
+    <!-- Diagonal leg -->
+    <path d="M 230,270 L 285,350" />
+  </g>
+
+  <!-- Wi-Fi Waves inside R's loop -->
+  <g stroke="#38bdf8" fill="none" stroke-width="8" stroke-linecap="round">
+    <circle cx="225" cy="225" r="5" fill="#38bdf8" stroke="none" />
+    <path d="M 210,210 A 22 22 0 0 1 240,210" />
+    <path d="M 200,198 A 36 36 0 0 1 250,198" />
+  </g>
+
+  <!-- Interlocking 'S' (Emerald Green) -->
+  <g fill="none" stroke="url(#greenGrad)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 345,190 C 335,165 295,165 275,182 C 250,202 280,242 310,257 C 345,277 350,312 330,337 C 310,360 265,358 250,340" />
+  </g>
+
+  <!-- Wi-Fi Waves radiating above S -->
+  <g stroke="#34d399" fill="none" stroke-width="8" stroke-linecap="round">
+    <path d="M 315,135 A 30 30 0 0 1 365,160" />
+    <path d="M 325,118 A 48 48 0 0 1 390,150" />
+    <path d="M 335,101 A 66 66 0 0 1 415,140" />
+  </g>
+</svg>

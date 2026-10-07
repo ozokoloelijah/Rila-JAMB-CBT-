@@ -1,0 +1,6 @@
+{
+  "name": "JAMB CBT Practice Exam Engine - Offline Pro",
+  "description": "Offline JAMB UTME CBT Practice application with past questions, 8-key system navigation, timers, and comprehensive performance analytics for Windows, macOS, and Linux.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
